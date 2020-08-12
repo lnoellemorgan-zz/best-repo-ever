@@ -19,6 +19,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: New Issue Response
+      - uses: actions/new-issue-response@master
       repo-token: ${{ secrets.GITHUB_TOKEN }}
       issue-message: 'Message that will be displayed on users'' first issue'
       pr-message: 'Message that will be displayed on users'' first pr'
